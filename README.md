@@ -1,3 +1,9 @@
+Hello
+
+This is a little test of Hooks in ReactJS.
+Read about hooks here
+https://reactjs.org/docs/hooks-intro.html
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
