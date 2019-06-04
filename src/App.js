@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import StateHook from './StateHook';
+import EffectHook from './EffectHook';
+
+
+const divStyle = {
+    width: '300px',
+    height: '200px',
+    justifyContent: 'center',
+    border: '5px solid black',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto'
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <h1>React Hooks test</h1>
+
+            <h3>State Hook</h3>
+            <div style={divStyle}>
+                <StateHook/>
+            </div>
+            <h3>Effect Hook</h3>
+            <div style={divStyle}>
+                <EffectHook/>
+            </div>
+        </div>
+    )
+        ;
 }
 
 export default App;
