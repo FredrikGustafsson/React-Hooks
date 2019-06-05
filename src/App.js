@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import StateHook from './StateHook';
 import EffectHook from './EffectHook';
+import BeforeStateHook from './BeforeStateHook';
+import BeforeEffectHook from './BeforeEffectHook';
 
 
 const divStyle = {
@@ -19,11 +21,19 @@ function App() {
         <div className="App">
             <h1>React Hooks test</h1>
 
-            <h3>State Hook</h3>
+            <h3>Before State Hook </h3>
+            <div style={divStyle}>
+                <BeforeStateHook/>
+            </div>
+            <h3>With State Hook</h3>
             <div style={divStyle}>
                 <StateHook/>
             </div>
-            <h3>Effect Hook</h3>
+            <h3>Before Effect Hook</h3>
+            <div style={divStyle}>
+                <BeforeEffectHook/>
+            </div>
+            <h3>with Effect Hook</h3>
             <div style={divStyle}>
                 <EffectHook/>
             </div>
